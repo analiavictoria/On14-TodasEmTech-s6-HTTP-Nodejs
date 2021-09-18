@@ -2,7 +2,7 @@ const data = [{
     "name": "Bulbasaur",
     "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
     "art_url": "http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png",
-    "types": ["poison", "grass"]
+    "types": ["poison", "grass"]//outro array
 },
 {
     "name": "Ivysaur",
@@ -29,5 +29,21 @@ const data = [{
     "types": ["fire"]
 }]
 
+//apresente no console todos os  dados dos pokemons
+//DESAFIO: types fora da lista
 // COMEÇA O EXERCÍCIO
 
+for(let i=0;i<=data.length-1;i++){
+   let pokemon = data[i]
+   console.log(pokemon.name)
+   console.log(pokemon.description)
+   console.log(pokemon.art_url)
+   console.log(pokemon.types)
+   console.log("\n")
+//percorrendo a segunda lista
+   let listaTipos = pokemon.types
+   for(let j = 0; j <=listaTipos.length-1; j++){
+    console.log(listaTipos[j])
+   }
+}
+//for = padrão i,j,k
